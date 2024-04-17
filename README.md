@@ -59,25 +59,25 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   Open another new terminal, edit `ROCKET_PORT` in `.env` to `8003`, then execute `cargo run`.
 
 ## Mandatory Checklists (Subscriber)
--   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
+-   [v] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create SubscriberRequest model struct.`
-    -   [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Notification repository.`
-    -   [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+    -   [v] Commit: `Create Notification model struct.`
+    -   [v] Commit: `Create SubscriberRequest model struct.`
+    -   [v] Commit: `Create Notification database and Notification repository struct skeleton.`
+    -   [v] Commit: `Implement add function in Notification repository.`
+    -   [v] Commit: `Implement list_all_as_string function in Notification repository.`
+    -   [v] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [v] Commit: `Create Notification service struct skeleton.`
+    -   [v] Commit: `Implement subscribe function in Notification service.`
+    -   [v] Commit: `Implement subscribe function in Notification controller.`
+    -   [v] Commit: `Implement unsubscribe function in Notification service.`
+    -   [v] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [v] Commit: `Implement receive_notification function in Notification service.`
+    -   [v] Commit: `Implement receive function in Notification controller.`
+    -   [v] Commit: `Implement list_messages function in Notification service.`
+    -   [v] Commit: `Implement list function in Notification controller.`
+    -   [v] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -91,3 +91,8 @@ This is the place for you to write reflections:
 2. Dalam bahasa pemrograman Rust, fitur lazy_static digunakan untuk mendefinisikan variabel yang berfungsi sebagai singleton, yang berarti hanya terdapat satu instansi dari variabel tersebut dalam seluruh program. Ini berkontras dengan Java, di mana nilai variabel static bisa diubah. Melalui lazy_static, variabel diinisialisasi hanya satu kali dan menjadi immutable, atau tidak dapat diubah, selama program berjalan, sehingga memberikan keamanan tambahan saat melakukan operasi multi-threading.
 
 #### Reflection Subscriber-2
+1. Saya telah menjelajahi berbagai hal di luar langkah-langkah yang diberikan dalam tutorial, termasuk src/lib.rs, yang merupakan file kunci dalam proyek Rust. File ini digunakan untuk mendefinisikan modul dan fungsi yang tersedia untuk digunakan secara luas. Ini berfungsi sebagai titik awal untuk eksekusi ketika proyek dijalankan sebagai pustaka.
+
+2. Penerapan pola Observer memudahkan dalam menambahkan pelanggan baru tanpa perlu mengubah kelas subjek. Pelanggan dapat secara mandiri mendaftar untuk mendapatkan pemberitahuan. Namun, jika ingin menambahkan lebih dari satu instans dari aplikasi utama, diperlukan perencanaan lebih lanjut dan penanganan yang lebih detil.
+
+3. Menurut pengalaman saya, fitur-fitur yang disediakan sangat menguntungkan. Melalui pengujian dengan koleksi Postman, kita bisa memastikan keakuratan fungsi program. Koleksi Postman juga membantu dalam memverifikasi respons dan operasi program sesuai dengan ekspektasi menggunakan data nyata dari aplikasi tersebut.
